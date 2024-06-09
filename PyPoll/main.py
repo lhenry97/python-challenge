@@ -105,7 +105,7 @@ with open(csvpath) as csvfile:
     print("")
 
     #create text file containg polling results
-    text_path = "PyPoll_Polling_Results.txt"
+    text_path = os.path.join('analysis', 'PyPoll_Polling_Results.txt')
     with open(text_path, 'w') as file:
         #write content to file
         file.write("\n")

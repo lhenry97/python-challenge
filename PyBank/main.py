@@ -103,7 +103,8 @@ with open(csvpath) as csvfile:
     print(f"Greatest Decrease in Profits: {greatestdecrease_date} (${greatestdecrease})")
 
     #write data to a text file
-    text_path = "PyBank_Financial_Results.txt"
+
+    text_path = os.path.join('analysis', 'PyBank_Financial_Results.txt')
     with open(text_path, 'w') as file:
         #write content to file
         file.write("\n")
