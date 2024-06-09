@@ -92,7 +92,7 @@ with open(csvpath) as csvfile:
             greatestdecrease_date = dates[row]
 
     #calculate average change of profit/loss        
-    averagechange = total_change / change_list_length
+    averagechange = round(total_change / change_list_length,2)
 
     print(f"Average Change: ${averagechange}")
     print("")
